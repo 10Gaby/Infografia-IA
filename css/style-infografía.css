@@ -28,6 +28,7 @@ body {
     width: 4000px;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
+    position: relative;
   }
   .one {
     background: url("../media/infografía/Parte\ 1.png");
