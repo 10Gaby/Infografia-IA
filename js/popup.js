@@ -111,5 +111,35 @@
       modal_container8.classList.remove('show');
     });
     
+
+
+    //Modal 9
+    const open9 = document.getElementById('open9');
+    const modal_container9 = document.getElementById('modal_container9');
+    const close9 = document.getElementById('close9');
+    
+    open9.addEventListener('click', () => {
+      modal_container9.classList.add('show');  
+    });
+    
+    close9.addEventListener('click', () => {
+      modal_container9.classList.remove('show');
+    });
+    
+
+    //Modal 10
+    const open10 = document.getElementById('open10');
+    const modal_container10 = document.getElementById('modal_container10');
+    const close10 = document.getElementById('close10');
+    
+    open10.addEventListener('click', () => {
+      modal_container10.classList.add('show');  
+    });
+    
+    close10.addEventListener('click', () => {
+      modal_container10.classList.remove('show');
+    });
+    
+  
   
  
