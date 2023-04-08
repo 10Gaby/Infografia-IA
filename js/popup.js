@@ -16,21 +16,3 @@ function generateModalListeners() {
 
 generateModalListeners();
 
-
-
-var container = document.querySelector('.outer-wrapper');
-
-container.addEventListener("touchstart", function(event) {
-  startX = event.touches[0].pageX;
-  startY = event.touches[0].pageY;
-  x = container.scrollLeft;
-  y = container.scrollTop;
-});
-
-container.addEventListener("touchmove", function(event) {
-  event.preventDefault();
-  var deltaX = startX - event.touches[0].pageX;
-  var deltaY = startY - event.touches[0].pageY;
-  container.scrollLeft = x + deltaX;
-  container.scrollTop = y + deltaY;
-});
