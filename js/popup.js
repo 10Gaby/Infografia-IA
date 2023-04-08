@@ -16,22 +16,40 @@ function generateModalListeners() {
 
 generateModalListeners();
 
-var container = document.querySelector('.outer-wrapper');
 
-var startX, startY, currentX, currentY;
+//Touch
 
-container.addEventListener("touchstart", function(event) {
-  startX = event.touches[0].pageX;
-  startY = event.touches[0].pageY;
-  currentX = container.scrollLeft;
-  currentY = container.scrollTop;
-});
-
-container.addEventListener("touchmove", function(event) {
-  var deltaX = startX - event.touches[0].pageX;
-  var deltaY = startY - event.touches[0].pageY;
-  if (Math.abs(deltaX) > Math.abs(deltaY)) {
-    event.preventDefault();
-    container.scrollLeft = currentX + deltaX * 2; // ajustar la velocidad horizontal aquí
-  }
-});
+var xDown = null;                                                        
+var yDown = null;                                                         
+ 
+function handleTouchStart(evt) {                                         
+    xDown = evt.touches[0].clientX;                                      
+    yDown = evt.touches[0].clientY;                                      
+};                                                 
+ 
+function handleTouchMove(evt) {                                          
+    if ( ! xDown || ! yDown ) {
+        return;
+    }
+ 
+    var xUp = evt.touches[0].clientX;                                    
+    var yUp = evt.touches[0].clientY;                                    
+ 
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+ 
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+        evt.preventDefault(); /* prevent scrolling while swiping */
+        if ( xDiff > 0 ) {
+            /* left swipe */
+        } else {
+            /* right swipe */
+        }                       
+    } 
+    /* reset values */
+    xDown = null;
+    yDown = null;                                             
+};
+ 
+document.addEventListener('touchstart', handleTouchStart, false);        
+document.addEventListener('touchmove', handleTouchMove, false);
