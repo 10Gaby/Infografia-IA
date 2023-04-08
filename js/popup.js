@@ -19,8 +19,26 @@ generateModalListeners();
 
 //Touch
 
+
 var container = document.querySelector('.outer-wrapper');
-var startX, startY, x, y;
+
+container.addEventListener("touchstart", function(event) {
+  startX = event.touches[0].pageX;
+  startY = event.touches[0].pageY;
+  x = container.scrollTop;
+  y = container.scrollLeft;
+});
+
+container.addEventListener("touchmove", function(event) {
+  event.preventDefault();
+  var deltaX = startX - event.touches[0].pageX;
+  var deltaY = startY - event.touches[0].pageY;
+  container.scrollTop = x + deltaX;
+  container.scrollLeft = y + deltaY;
+});
+
+/*
+var container = document.querySelector('.outer-wrapper');
 
 container.addEventListener("touchstart", function(event) {
   startX = event.touches[0].pageX;
@@ -33,11 +51,8 @@ container.addEventListener("touchmove", function(event) {
   event.preventDefault();
   var deltaX = startX - event.touches[0].pageX;
   var deltaY = startY - event.touches[0].pageY;
-  if (deltaX > 0) {
-    container.scrollLeft = x - deltaX;
-  } else {
-    container.scrollLeft = x + Math.abs(deltaX);
-  }
+  container.scrollLeft = x + deltaX;
   container.scrollTop = y + deltaY;
 });
-                                        
+                           
+*/
