@@ -25,14 +25,14 @@ body {
   .wrapper {
     display: flex;
     flex-direction: row;
-    width: 300vw;
+    width: 4000px;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
   }
   .one {
     background: url("../media/infografía/Parte\ 1.png");
-    background-size: auto 100vh;
-    width: 300vw;
+    background-size: 4000px 100vh;
+    width: 4000px;
   }
   .outer-wrapper {
     width: 100vh;
