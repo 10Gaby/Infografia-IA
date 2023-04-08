@@ -170,8 +170,66 @@ body {
   left: 3370px;
 }
 
+.star-2-10{
+  top: 20px;
+  left: 3370px;
+}
+
+.star-2-11{
+  top: 20px;
+  left: 3370px;
+}
 
 
+.star-3-1{
+  top: 150px;
+  left: 2470px;
+}
+
+.star-3-2{
+  top: 230px;
+  left: 2550px;
+}
+
+.star-3-3{
+  top: 210px;
+  left: 2670px;
+}
+
+.star-3-4{
+  top: 300px;
+  left: 2750px;
+}
+
+.star-3-5{
+  top: 220px;
+  left: 2840px;
+}
+
+.star-3-6{
+  top: 300px;
+  left: 2920px;
+}
+
+.star-3-7{
+  top: 190px;
+  left: 2980px;
+}
+
+.star-3-8{
+  top: 240px;
+  left: 3080px;
+}
+
+.star-3-9{
+  top: 140px;
+  left: 3190px;
+}
+
+.star-3-10{
+  top: 180px;
+  left: 3350px;
+}
 
 
   .line{
@@ -367,6 +425,17 @@ body {
   position: absolute;
 }
 
+.modal3 {
+  background: #802EF2;
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: white;
+  position: absolute;
+}
+
 .close{
   padding: 10px 30px;
   cursor: pointer;
@@ -477,4 +546,14 @@ body {
 #modal20{
   top: 120px;
   left: 3250px;
+}
+
+#modal21{
+  top: 240px;
+  left: 2350px;
+}
+
+#modal22{
+  top: 310px;
+  left: 2450px;
 }
