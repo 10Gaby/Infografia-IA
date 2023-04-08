@@ -17,8 +17,8 @@ function generateModalListeners() {
 generateModalListeners();
 
 
-//Touch
 
+//Touch
 
 var container = document.querySelector('.outer-wrapper');
 

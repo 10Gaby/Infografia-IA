@@ -1,4 +1,37 @@
 body{
+    color: white;
+}
+
+section[class^="sect"] {
+    text-align: center;
     background-image: url(../media/img/Fondo\ Introducción.png);
     background-size: 100vw 100vh;
-}
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .sub{
+    max-width: 60%;
+    margin: 0 auto;
+    padding-top: 80px;
+    display: grid;
+  }
+
+  h3{
+    font-size: 1.5em;
+  }
+
+
+
+  .sect1.block,.sect2.block, .sect3.block, .sect4.block, .sect5.block, .sect6.block{
+    display: block;
+  }
+
+  section[class^="sect"]{
+    display: none;
+  }
+
+
+  .recorrido{
+    width: 100%;
+  }
