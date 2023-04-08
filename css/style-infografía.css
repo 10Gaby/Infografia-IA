@@ -61,11 +61,26 @@ body {
     position: absolute;
     background-color:  rgba(0, 0, 0, 0);
     border: none;
-    box-shadow: rgba(0, 0, 0, .7);
+    box-shadow: 3px 3px 20px rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 10px 10px;
   }
 
   .btn-star:hover{
     cursor: pointer;
+  }
+
+  .line{
+    width: 200px;
+    height: 3px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+  }
+
+  .l1{
+    top: 100px;
+    left: 280px;
+    transform: rotate(-16deg);
   }
 
   .star-1-1{
