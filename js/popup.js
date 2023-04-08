@@ -20,6 +20,7 @@ generateModalListeners();
 //Touch
 
 var container = document.querySelector('.outer-wrapper');
+var startX, startY, x, y;
 
 container.addEventListener("touchstart", function(event) {
   startX = event.touches[0].pageX;
@@ -32,7 +33,11 @@ container.addEventListener("touchmove", function(event) {
   event.preventDefault();
   var deltaX = startX - event.touches[0].pageX;
   var deltaY = startY - event.touches[0].pageY;
-  container.scrollLeft = x + deltaX;
+  if (deltaX > 0) {
+    container.scrollLeft = x - deltaX;
+  } else {
+    container.scrollLeft = x + Math.abs(deltaX);
+  }
   container.scrollTop = y + deltaY;
 });
-                                               
+                                        
