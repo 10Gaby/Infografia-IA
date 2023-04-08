@@ -1,58 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root{
-  --tipografía1: 'Righteous', cursive;
-  --tipografía2: 'Raleway', sans-serif;
-}
-
-h1,h2,h3,h4{
-  font-family: var(--tipografía1);
-}
-
-p{
-  font-family: var(--tipografía2)
-}
-
-body {
-    margin: 0;
-    padding: 0;
-  }
-  .slide {
-    width: 100vw;
-    height: 100vh;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 4000px;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-    position: relative;
-  }
-  .one {
-    background: url("../media/infografía/Parte\ 1.png");
-    width: 4000px;
-    background-size: 100% 100vh;
-    height: 100vh;
-  }
-  .outer-wrapper {
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  ::-webkit-scrollbar {
-    display:none;
-  }
-
-
-
   .star{
     position: absolute;
   }
@@ -183,42 +128,42 @@ body {
 
 .star-3-1{
   top: 150px;
-  left: 2470px;
+  left: 2440px;
 }
 
 .star-3-2{
-  top: 230px;
-  left: 2550px;
+  top: 220px;
+  left: 2530px;
 }
 
 .star-3-3{
-  top: 210px;
+  top: 250px;
   left: 2670px;
 }
 
 .star-3-4{
-  top: 300px;
+  top: 350px;
   left: 2750px;
 }
 
 .star-3-5{
-  top: 220px;
-  left: 2840px;
+  top: 260px;
+  left: 2820px;
 }
 
 .star-3-6{
-  top: 300px;
-  left: 2920px;
+  top: 320px;
+  left: 2940px;
 }
 
 .star-3-7{
-  top: 190px;
+  top: 210px;
   left: 2980px;
 }
 
 .star-3-8{
   top: 240px;
-  left: 3080px;
+  left: 3100px;
 }
 
 .star-3-9{
@@ -246,6 +191,14 @@ body {
     position: absolute;
     box-shadow: 1px 1px 20px #63FFF6;
   }
+
+  .line3{
+    height: 2px;
+    background-color: #802EF2;
+    position: absolute;
+    box-shadow: 1px 1px 20px #802EF2;
+  }
+
 
   .l1{
     width: 200px;
@@ -372,6 +325,78 @@ body {
     left: 3130px;
     transform: rotate(-23deg);
   }
+
+  .l19{
+    width: 70px;
+    top: 245px;
+    left: 2510px;
+    transform: rotate(38deg);
+  }
+
+  .l20{
+    width: 100px;
+    top: 300px;
+    left: 2610px;
+    transform: rotate(10deg);
+  }
+
+  .l21{
+    width: 90px;
+    top: 350px;
+    left: 2730px;
+    transform: rotate(50deg);
+  }
+
+  .l22{
+    width: 70px;
+    top: 360px;
+    left: 2810px;
+    transform: rotate(-50deg);
+  }
+
+  .l23{
+    width: 70px;
+    top: 360px;
+    left: 2810px;
+    transform: rotate(-50deg);
+  }
+
+  .l24{
+    width: 100px;
+    top: 350px;
+    left: 2890px;
+    transform: rotate(30deg);
+  }
+
+  .l25{
+    width: 100px;
+    top: 330px;
+    left: 2975px;
+    transform: rotate(-70deg);
+  }
+
+  .l26{
+    width: 80px;
+    top: 280px;
+    left: 3065px;
+    transform: rotate(20deg);
+  }
+
+  .l27{
+    width: 90px;
+    top: 255px;
+    left: 3165px;
+    transform: rotate(-50deg);
+  }
+
+  .l28{
+    width: 130px;
+    top: 225px;
+    left: 3265px;
+    transform: rotate(17deg);
+  }
+
+
 
   /*================VENTANA MODAL================*/
 
@@ -556,4 +581,45 @@ body {
 #modal22{
   top: 310px;
   left: 2450px;
+}
+
+#modal23{
+  top: 60px;
+  left: 2570px;
+}
+
+#modal24{
+  top: 150px;
+  left: 2650px;
+}
+
+#modal25{
+  top: 70px;
+  left: 2720px;
+}
+
+#modal26{
+  top: 130px;
+  left: 2830px;
+}
+
+#modal27{
+  top: 290px;
+  left: 2890px;
+}
+
+#modal28{
+  top: 20px;
+  left: 2990px;
+}
+
+
+#modal29{
+  top: 230px;
+  left: 3090px;
+}
+
+#modal30{
+  top: 270px;
+  left: 3230px;
 }
