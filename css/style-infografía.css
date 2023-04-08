@@ -31,8 +31,9 @@ body {
   }
   .one {
     background: url("../media/infografía/Parte\ 1.png");
-    background-size: 4000px 100vh;
     width: 4000px;
+    background-size: contain;
+    height: 100vh;
   }
   .outer-wrapper {
     width: 100vh;
