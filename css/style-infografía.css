@@ -61,6 +61,7 @@ body {
     position: absolute;
     background-color:  rgba(0, 0, 0, 0);
     border: none;
+    box-shadow: rgba(0, 0, 0, .7);
   }
 
   .btn-star:hover{
@@ -68,7 +69,7 @@ body {
   }
 
   .star-1-1{
-    top: 90px;
+    top: 110px;
     left: 235px;
   }
 
