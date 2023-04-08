@@ -15,3 +15,17 @@ function generateModalListeners() {
 }
 
 generateModalListeners();
+
+
+var container = document.querySelector('.touch-enabled');
+var hammertime = new Hammer(container, {
+  touchAction: 'auto',
+  inputClass: Hammer.TouchInput,
+  recognizers: [
+    [Hammer.Pan, { direction: Hammer.DIRECTION_HORIZONTAL }]
+  ]
+});
+
+hammertime.on('pan', function(ev) {
+  container.scrollLeft -= ev.deltaX;
+});
