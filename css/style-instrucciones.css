@@ -2,19 +2,29 @@ body{
     color: white;
 }
 
-section[class^="sect"] {
-    text-align: center;
-    background-image: url(../media/img/Fondo\ Introducción.png);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
+section[class^="sect"]:not(.sect3) {
+  text-align: center;
+  background-image: url(../media/img/Fondo\ Introducción.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
+.sect3{
+  text-align: center;
+  background-image: url(../media/img/Fondo\ Introducción.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
   .sub{
     max-width: 60%;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 30px;
     display: grid;
+    justify-items: center;
   }
 
   h3{
@@ -34,4 +44,31 @@ section[class^="sect"] {
 
   .recorrido{
     width: 100%;
+  }
+
+  .IA{
+    width: 600px;
+  }
+
+  .column3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .column2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+  }
+
+  .inst-btn{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    align-items: center;
+  }
+
+  a > img{
+    width: 70px;
   }
