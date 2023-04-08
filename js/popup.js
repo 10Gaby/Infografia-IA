@@ -16,15 +16,15 @@ function generateModalListeners() {
 
 generateModalListeners();
 
-
-
 var container = document.querySelector('.outer-wrapper');
+
+var startX, startY, currentX, currentY;
 
 container.addEventListener("touchstart", function(event) {
   startX = event.touches[0].pageX;
   startY = event.touches[0].pageY;
-  x = container.scrollLeft;
-  y = container.scrollTop;
+  currentX = container.scrollLeft;
+  currentY = container.scrollTop;
 });
 
 container.addEventListener("touchmove", function(event) {
@@ -32,7 +32,6 @@ container.addEventListener("touchmove", function(event) {
   var deltaY = startY - event.touches[0].pageY;
   if (Math.abs(deltaX) > Math.abs(deltaY)) {
     event.preventDefault();
-    container.scrollLeft = x + deltaX;
+    container.scrollLeft = currentX + deltaX * 2; // ajustar la velocidad horizontal aquí
   }
 });
-
