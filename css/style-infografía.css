@@ -1,5 +1,9 @@
 /*Infografía*/
 
+body{
+  scroll-behavior: smooth;
+}
+
 .slide {
     width: 100vw;
     height: 100vh;
@@ -11,6 +15,7 @@
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
     position: relative;
+    scroll-behavior: smooth;
   }
   .uno {
     background: url("../media/infografía/Parte\ 1.png");
@@ -24,6 +29,7 @@
         width: 3000px;
     background-size: 100% 100vh;
     height: 100vh;
+    position: relative;
   }
 
   .outer-wrapper {

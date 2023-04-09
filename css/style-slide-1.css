@@ -400,7 +400,7 @@
 
   /*================VENTANA MODAL================*/
 
-.modal-container {
+.modal-container, .modal-container2{
   display: flex;
   align-items: center;
   justify-content: center;
