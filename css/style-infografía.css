@@ -7,17 +7,25 @@
   .wrapper {
     display: flex;
     flex-direction: row;
-    width: 4000px;
+    width: 7000px;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
     position: relative;
   }
-  .one {
+  .uno {
     background: url("../media/infografía/Parte\ 1.png");
     width: 4000px;
     background-size: 100% 100vh;
     height: 100vh;
   }
+
+  .dos{
+    background-image: url(../media/infografía/parte\ 2.png);
+        width: 3000px;
+    background-size: 100% 100vh;
+    height: 100vh;
+  }
+
   .outer-wrapper {
     width: 100vh;
     height: 100vw;
@@ -34,3 +42,13 @@
     display:none;
   }
 
+  .tren{
+    position: fixed;
+    bottom: 50px;
+    left: -70px;
+    z-index: 10;
+  }
+
+  .tren img{
+    width: 800px;
+  }

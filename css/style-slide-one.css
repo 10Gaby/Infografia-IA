@@ -437,6 +437,7 @@
   text-align: left;
   color: black;
   position: absolute;
+  z-index: 99;
 }
 
 .modal2 {
@@ -448,6 +449,7 @@
   text-align: left;
   color: black;
   position: absolute;
+  z-index: 99;
 }
 
 .modal3 {
@@ -459,6 +461,7 @@
   text-align: left;
   color: white;
   position: absolute;
+  z-index: 99;
 }
 
 .close{
