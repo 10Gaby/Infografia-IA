@@ -11,7 +11,7 @@ body{
   .wrapper {
     display: flex;
     flex-direction: row;
-    width: 7000px;
+    width: 8200px;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
     position: relative;
@@ -26,11 +26,21 @@ body{
 
   .dos{
     background-image: url(../media/infografía/parte\ 2.png);
-        width: 3000px;
+    width: 3000px;
     background-size: 100% 100vh;
     height: 100vh;
     position: relative;
   }
+
+
+  .tres{
+    background-image: url(../media/infografía/parte\ 3.png);
+    width: 1200px;
+    background-size: 100% 100vh;
+    height: 100vh;
+    position: relative;
+  }
+  
 
   .outer-wrapper {
     width: 100vh;

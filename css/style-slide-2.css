@@ -4,6 +4,12 @@
     width: fit-content;
     border: 5px dashed var(--color1);
     padding: 30px;
+    transform: translateY(-100vh);
+    transition: 1s;
+}
+
+.letrero.animate{
+   transform: translate(0);
 }
 
 button{
