@@ -641,3 +641,26 @@
 .volver:hover{
   color: white;
 }
+
+.btn-star:nth-child(odd) img {
+  animation: titilar 2s linear infinite;
+}
+
+.btn-star:nth-child(even) img {
+  animation: titilar 2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes titilar {
+   0% {
+    transform: scale(.8);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(.8);
+  }
+}

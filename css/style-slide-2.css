@@ -10,10 +10,14 @@ button{
     background-color: rgba(0,0,0,0);
     border: none;
     cursor: pointer;
+}
+
+[class*="icon"]{
     animation-name: float;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
 }
+
 
 @keyframes float {
     0%{
@@ -51,6 +55,42 @@ button{
     left: 930px;
  }
 
+ .icon2-5{
+    position: absolute;
+    top: 260px;
+    left: 1030px;
+ }
+
+  .icon2-6{
+    position: absolute;
+    top: 300px;
+    left: 1630px;
+ }
+
+   .icon2-7{
+    position: absolute;
+    top: 310px;
+    left: 1900px;
+ }
+
+   .icon2-8{
+    position: absolute;
+    top: 300px;
+    left: 2040px;
+ }
+
+  .icon2-9{
+    position: absolute;
+    top: 330px;
+    left: 2170px;
+ }
+
+  .icon2-10{
+    position: absolute;
+    top: 280px;
+    left: 2270px;
+ }
+
 
   
 .modal2-2 {
@@ -69,5 +109,51 @@ button{
 
 #modal2-1{
     top: 40px;
-    left: 4240px;
+    left: 4220px;
+ }
+
+
+#modal2-2{
+    top: 70px;
+    left: 4470px;
+ }
+
+ #modal2-3{
+    top: 40px;
+    left: 4640px;
+ }
+
+ #modal2-4{
+    top: 70px;
+    left: 4740px;
+ }
+
+ #modal2-5{
+    top: 50px;
+    left: 4840px;
+ }
+
+ #modal2-6{
+    top: 40px;
+    left: 5440px;
+ }
+
+ #modal2-7{
+    top: 40px;
+    left: 5740px;
+ }
+
+ #modal2-8{
+    top: 40px;
+    left: 5860px;
+ }
+
+ #modal2-9{
+    top: 70px;
+    left: 5990px;
+ }
+
+ #modal2-10{
+    top: 40px;
+    left: 6090px;
  }
