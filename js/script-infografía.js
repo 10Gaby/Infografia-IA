@@ -45,7 +45,6 @@ container.addEventListener("touchstart", function(event) {
   startX = event.touches[0].pageX;
   startY = event.touches[0].pageY;
   x = container.scrollTop;
-  y = container.scrollLeft;
 });
 
 container.addEventListener("touchmove", function(event) {
