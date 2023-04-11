@@ -105,6 +105,8 @@ a:hover{
     transform: translateY(-7px);
 }
 
+/*Responsivo Para Celulares*/
+
 @media screen and (max-width: 700px){
     .robot{
         position: initial;
@@ -131,7 +133,7 @@ a:hover{
     }
     
     .d2 img{
-        width: 100px;
+        width: 80px;
     }
     .s2{
         display: grid;
@@ -140,5 +142,13 @@ a:hover{
         max-width: 80%;
         margin: 0 auto;
         text-align: center;
+    }
+
+    .decoración{
+        display: grid;
+        animation-name: float;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        position: fixed;
     }
 }

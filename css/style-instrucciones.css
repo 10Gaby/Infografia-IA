@@ -2,7 +2,7 @@ body{
     color: white;
 }
 
-section[class^="sect"]:not(.sect3) {
+.sect1, .sect2, .sect4, .sect5, .sect6 {
   text-align: center;
   background-image: url(../media/img/inicio-instrucciones/Fondo\ Introducción.png);
   background-size: 100vw 100vh;
@@ -84,3 +84,66 @@ section[class^="sect"]:not(.sect3) {
   a > img{
     width: 70px;
   }
+
+
+/*Responsivo Para Celulares*/
+
+@media screen and (max-width: 700px){
+
+  .sub{
+    max-width: 60%;
+    height: 73vh;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+  }
+
+  .sub-3{
+    max-width: 90%;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+  }
+  .sub{
+    max-width: 80%;
+    height: 100vh;
+  }
+  .sect5 .inst-btn, .sect6 .inst-btn{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .sect1, .sect2, .sect3, .sect4, .sect5, .sect6{
+    text-align: center;
+    background: linear-gradient(#251C61, #9745AD);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .IA{
+    width: 100%;
+  }
+  .column3{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .column3 > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .column2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: left;
+  }
+  .column2 img{
+    width: 100%;
+  }
+}
