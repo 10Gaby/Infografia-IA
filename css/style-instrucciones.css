@@ -10,10 +10,20 @@ section[class^="sect"]:not(.sect3) {
   height: 100vh;
 }
 
+.sub-3{
+  max-width: 60%;
+  height: 100vh;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+}
+
 
 .sect3{
   text-align: center;
-  background-image: url(../media/img/inicio-instrucciones/Fondo\ Introducción.png);
+  background: linear-gradient(#251C61, #9745AD);
   background-size: 100%;
   background-repeat: no-repeat;
   height: 100vh;
@@ -21,8 +31,10 @@ section[class^="sect"]:not(.sect3) {
 
   .sub{
     max-width: 60%;
+    height: 60vh;
+    align-items: center;
+    align-content: center;
     margin: 0 auto;
-    padding-top: 30px;
     display: grid;
     justify-items: center;
   }
@@ -47,7 +59,7 @@ section[class^="sect"]:not(.sect3) {
   }
 
   .IA{
-    width: 600px;
+    width: 75%;
   }
 
   .column3{
