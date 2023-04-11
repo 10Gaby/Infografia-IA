@@ -53,7 +53,6 @@ container.addEventListener("touchmove", function(event) {
   var deltaX = startX - event.touches[0].pageX;
   var deltaY = startY - event.touches[0].pageY;
   container.scrollTop = x + deltaX;
-  container.scrollLeft = y + deltaY;
 });
 
 /*
