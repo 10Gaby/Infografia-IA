@@ -18,14 +18,14 @@ body{
     scroll-behavior: smooth;
   }
   .uno {
-    background: url("../media/infografía/Parte\ 1.png");
+    background: url("../media/img/infografía/Parte\ 1.png");
     width: 4000px;
     background-size: 100% 100vh;
     height: 100vh;
   }
 
   .dos{
-    background-image: url(../media/infografía/parte\ 2.png);
+    background-image: url(../media/img/infografía/parte\ 2.png);
     width: 3000px;
     background-size: 100% 100vh;
     height: 100vh;
@@ -34,7 +34,7 @@ body{
 
 
   .tres{
-    background-image: url(../media/infografía/parte\ 3.png);
+    background-image: url(../media/img/infografía/parte\ 3.png);
     width: 1200px;
     background-size: 100% 100vh;
     height: 100vh;
